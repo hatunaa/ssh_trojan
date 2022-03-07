@@ -40,7 +40,7 @@ do
 				
 				break
 			else
-				password+=$char
+				password+=$ch
 			fi           
         done
     fi
