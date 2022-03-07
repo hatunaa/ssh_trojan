@@ -1,0 +1,37 @@
+strace: Process 3219 attached
+read(4, "t", 1)                         = 1
+read(4, "h", 1)                         = 1
+read(4, "i", 1)                         = 1
+read(4, "s", 1)                         = 1
+read(4, "i", 1)                         = 1
+read(4, "s", 1)                         = 1
+read(4, "f", 1)                         = 1
+read(4, "a", 1)                         = 1
+read(4, "k", 1)                         = 1
+read(4, "e", 1)                         = 1
+read(4, "f", 1)                         = 1
+read(4, "l", 1)                         = 1
+read(4, "a", 1)                         = 1
+read(4, "g", 1)                         = 1
+read(4, "\n", 1)                        = 1
+write(4, "\n", 1)                       = 1
+ioctl(4, TCGETS, {B38400 opost isig icanon -echo ...}) = 0
+ioctl(4, SNDCTL_TMR_CONTINUE or TCSETSF, {B38400 opost isig icanon echo ...}) = 0
+ioctl(4, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa916895210}, NULL, 8) = 0
+close(4)                                = 0
+getpid()                                = 3219
+write(3, "\10w=B\35\213X\257\3720\322\3\27\34\\\321n_\20\204\202.\314E\n6\327@u\253e\27"..., 148) = 148
+select(4, [3], NULL, NULL, NULL)        = 1 (in [3])
+read(3, "", 8192)                       = 0
+write(2, "Connection closed by 127.0.0.1 p"..., 40) = 40
+exit_group(255)                         = ?
++++ exited with 255 +++
